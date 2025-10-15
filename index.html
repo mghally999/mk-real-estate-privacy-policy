@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MK Real Estate Broker Dubai | Luxury Properties, Villas & Apartments for Sale & Rent</title>
+    <meta name="description"
+        content="Discover luxury villas, apartments, and investment opportunities in Dubai with MK Real Estate Broker — your trusted partner for buying, selling, and renting premium properties across UAE. Contact us today for expert advice and exclusive listings.">
+    <meta name="keywords"
+        content="MK Real Estate Dubai, real estate broker Dubai, buy villa Dubai, luxury apartments UAE, real estate investment, property for sale Dubai, Dubai homes, MK Real Estate Broker">
+    <meta name="author" content="MK Real Estate Broker">
+    <meta property="og:title" content="MK Real Estate Broker Dubai | Luxury Villas & Apartments" />
+    <meta property="og:description"
+        content="Explore exclusive Dubai real estate with MK Real Estate — trusted brokers for villas, apartments, and investments." />
+    <meta property="og:image" content="/logo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="/logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #d4af37;
+            --bg: #0f0f0f;
+            --panel: #1b1b1b;
+            --ink: #f2f2f2;
+            --ink-light: #bfbfbf;
+            --shadow: rgba(0, 0, 0, .4);
+            --glow: rgba(212, 175, 55, .3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: "Inter", system-ui, sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* === HEADER SECTION === */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px 40px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            background: radial-gradient(circle at center, #1b1b1b 0%, #0f0f0f 100%);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .logo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+        }
+
+        .brand-title {
+            font-family: "Playfair Display", serif;
+            font-weight: 700;
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            color: var(--gold);
+            text-shadow: 0 0 12px var(--glow);
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            color: var(--ink-light);
+            margin-top: 8px;
+            font-size: 1.1rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        /* === CONTENT SECTIONS === */
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 100px;
+        }
+
+        section {
+            margin: 28px 0;
+            padding: 28px 26px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 18px;
+            background: var(--panel);
+            box-shadow: 0 6px 30px var(--shadow);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .8s ease, transform .8s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        p,
+        li {
+            color: var(--ink);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin: 12px 0;
+        }
+
+        a {
+            color: var(--gold);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color .2s ease, text-shadow .2s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 6px var(--glow);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 215, 0, 0.15);
+            color: var(--ink-light);
+            font-size: 14px;
+        }
+
+        .fab {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 40;
+        }
+
+        .fab .action {
+            border: none;
+            border-radius: 50px;
+            padding: 12px 18px;
+            background: linear-gradient(90deg, var(--gold), #e6c86e);
+            color: #000;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 5px 20px var(--glow);
+        }
+
+        .fab .action:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px var(--glow);
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 22px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="/logo.jpg" alt="MK Real Estate Logo" class="logo" />
+            <div class="header-text">
+                <h1 class="brand-title">MK Real Estate</h1>
+                <div class="subtitle">Privacy Policy</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <section>
+            <h2>Introduction</h2>
+            <p>At MK Real Estate, we value your privacy and are committed to protecting your personal information. This
+                Privacy Policy explains how we collect, use, and safeguard your data when you engage with our services,
+                submit
+                inquiries, or interact with our social media pages.</p>
+        </section>
+
+        <section>
+            <h2>Information We Collect</h2>
+            <ul>
+                <li>Full name</li>
+                <li>Phone number</li>
+                <li>Email address</li>
+                <li>Property preferences and investment interests</li>
+                <li>Budget and location preferences (optional)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li>To contact you regarding your property inquiries</li>
+                <li>To share property listings and investment opportunities</li>
+                <li>To provide personalized real estate recommendations</li>
+                <li>To comply with legal and regulatory obligations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Protection &amp; Security</h2>
+            <p>Your data is securely stored and protected from unauthorized access. We take reasonable steps to maintain
+                the
+                confidentiality and integrity of your information.</p>
+        </section>
+
+        <section>
+            <h2>Third-Party Disclosure</h2>
+            <p>We do not sell or rent your data. However, your information may be shared with:</p>
+            <ul>
+                <li>Verified real estate partners and developers</li>
+                <li>Service providers assisting in marketing or communications</li>
+                <li>Legal authorities when required by law</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Rights</h2>
+            <p>You have the right to request access, correction, or deletion of your personal data at any time by
+                contacting
+                us at <a href="mailto:info@mkrealestate.ae">info@mkrealestate.ae</a>.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>📧 Email: <a href="mailto:info@mkrealestate.ae">info@mkrealestate.ae</a><br>
+                📞 Phone: +971 52 724 0872<br>
+                📍 Dubai, United Arab Emirates
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        © 2025 MK Real Estate Broker. All rights reserved.
+    </footer>
+
+    <div class="fab">
+        <button class="action" onclick="window.scrollTo({top:0,behavior:'smooth'})">Top</button>
+        <button class="action" onclick="window.print()">Print</button>
+    </div>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: .15 });
+
+        document.querySelectorAll('section').forEach(s => io.observe(s));
+    </script>
+
+</body>
+
+</html>
